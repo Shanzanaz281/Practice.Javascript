@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        is_string = function(input) {
+  if (typeof input === 'string')
+    return true;
+  else
+    return false;   
+    };
+console.log(is_string('w3resource'));
+console.log(is_string([1, 2, 4, 0]));
+    </script>
+    <script>
+        is_Blank =  function(input) {
+        if (typeof input === 0)
+        return true;
+        else 
+        return false;
+      }
+console.log(is_Blank(''));
+console.log(is_Blank('abc'));
+    </script>
+    <script>
+        string_to_array = function (str) {
+     return str.trim().split(" ");
+};
+console.log(string_to_array("Robin Singh"));
+    </script> -->
+    <script>
+        abbrev_name = function (str1) {
+    var split_names = str1.trim().split(" ");
+    if (split_names.length > 1) {
+        return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+    }
+    return split_names[0];
+};
+console.log(abbrev_name("Robin Singh"));
+    </script>
+</body>
+</html>

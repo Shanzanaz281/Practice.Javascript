@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+        console.log("Today is : " + daylist[day] + ".");
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        var prepand = (hour >= 12) ? " PM " : " AM ";
+        hour = (hour >= 12) ? hour - 12 : hour;
+        if (hour === 0 && prepand === ' PM ') {
+            if (minute === 0 && second === 0) {
+                hour = 12;
+                prepand = ' Noon';
+            }
+            else {
+                hour = 12;
+                prepand = ' PM';
+            }
+        }
+        if (hour === 0 && prepand === ' AM ') {
+            if (minute === 0 && second === 0) {
+                hour = 12;
+                prepand = ' Midnight';
+            }
+            else {
+                hour = 12;
+                prepand = ' AM';
+            }
+        }
+        console.log("Current Time : " + hour + prepand + " : " + minute + " : " + second);
+    </script> -->
+    <!-- <script>
+        var today = new Date();
+        var dd = today.getDay();
+        var mm= today.getMonth() +1;
+        var yyyy = today.getFullYear();
+        if(dd<10)
+        {
+             dd= '0'+dd;
+        }
+        if(mm<10)
+        {
+          mm= '0'+mm;
+        }
+         today = mm+'-'+dd+'-'+yyyy;
+         console.log(today);
+         today = mm+'/'+dd+'/'+yyyy;
+         console.log(today);
+         today = dd+'-'+mm+'-'+yyyy;
+         console.log(today);
+         today = dd+'/'+mm+'/'+yyyy;
+         console.log(today);
+       </script> -->
+       <script>
+        var side1 = 5; 
+        var side2 = 6; 
+        var side3 = 7; 
+        var s = (side1 + side2 + side3)/2;
+        var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+        console.log(area);
+        </script> -->
+        <!-- <script>
+            const is_leapyear = year => new Date(year, 1, 29).getMonth() === 1;
+       console.log(is_leapyear(2016));
+       console.log(is_leapyear(2000));
+       console.log(is_leapyear(1700));
+       console.log(is_leapyear(1800));
+       console.log(is_leapyear(100));
+        </script>
+</body>
+
+</html>

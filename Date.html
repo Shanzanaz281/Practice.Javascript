@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var curday = function(fp){
+            today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1;//As January is 0
+            var yyyy = today.getFullYear();
+            if(dd<10) dd ='0'+dd;
+            if(mm<10) mm ='0'+mm;
+            return(mm+fp+dd+fp+yyyy);
+        };
+        console.log(curday('-'));
+        console.log(curday('/'));
+    </script> -->
+    <!-- <script>
+        var getDaysInMonth = function(month,year) {
+ return new Date(year, month, 0).getDate();
+};
+console.log(getDaysInMonth(1, 2012));
+console.log(getDaysInMonth(2, 2012));
+console.log(getDaysInMonth(9, 2012));
+console.log(getDaysInMonth(12, 2012));
+    </script> -->
+    <!-- <script>
+        var month_name = function(dt){
+mlist = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+  return mlist[dt.getMonth()];
+};
+console.log(month_name(new Date("12/11/2020")));
+console.log(month_name(new Date("10/13/2021")));
+    </script> -->
+    <!-- <script>
+        var is_weekend = function(date1){
+            var dt = new Date(date1);
+            if(dt.getDay() == 6 || dt.getDay() == 0)
+            {
+                return "Weekend";
+            }
+        }
+        console.log(is_weekend('Nov 15, 2014'));
+        console.log(is_weekend('Nov 16, 2014'));
+        console.log(is_weekend('Nov 25, 2014'));
+
+    </script> -->
+    <script>
+        var lastday = function(y , m){
+            return new Date(y, m +1, 0).getDate();
+        }
+        console.log(lastday(2014,0));
+        console.log(lastday(2014,1));
+        console.log(lastday(2014,2));
+    </script>
+
+</body>
+</html>

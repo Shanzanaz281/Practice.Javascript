@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var x = 20;   
+        var y = 40;   
+  
+x = y;  
+console.log("After assignment the value of x is:  " + x);   
+  
+x += y;   
+console.log("x+=y: " + x);   
+  
+x -= y;   
+console.log("x-=y: " + x);   
+  
+x *= y;   
+console.log("x*=y: " + x);   
+  
+x /= y;   
+console.log("x/=y: " + x);   
+  
+x %= y;   
+console.log("x%=y: " + x);  
+    </script> -->
+    <!-- <script>
+       let number = [100,200,400];
+
+       let iter = number[Symbol.iterator]();
+       iter.next();
+       console.log(iter.next().value);
+       console.log(iter.next().done);
+    </script> -->
+    <!-- <script>
+        let str = "Abdul subhan";
+        let iter = str[Symbol.iterator]();
+        let result = iter.next();
+        while(!result.done){
+            console.log(result.value);
+            result = iter.next();
+        }
+    </script> -->
+    <!-- <script>
+        function *generateit(){
+            console.log('First Message');
+            console.log('Second Message');
+        }
+        let g = generateit();
+        console.log(g.next());
+        console.log(g.next());
+    </script> -->
+    <!-- <script>
+        let user = ["Abdul subhan", "sajid", 20, "mian8799@gmail.com"];
+        let [name, fatherName, Age, Email]= user;
+        console.log(name);
+        console.log(fatherName);
+        console.log(Age);
+        console.log(Email);
+    </script> -->
+   <!-- <script>
+       class employe{
+           constructor (name){
+               Constructor.log("constructor : Employe" + name);
+           }
+       }
+       class manager extends employe{
+           Constructor(name){
+               super();
+               console.log("constructor : Manager");
+           }
+       }
+       let a= new manager("New window");
+   </script> -->
+   <!-- <script>
+       function *generateit(){
+           let nextNum = 700;
+           while(true){
+               yield(nextNum++);
+           }
+       }
+       let g = generateit();
+       console.log(g.next())
+       console.log(g.next())
+       console.log(g.next())
+       console.log(g.next())
+   </script> -->
+   <!-- <script>
+       function *generateit(){
+           let yArray = [yield, yield, yield];
+           console.log(`result : ${yArray[2]}`);
+       }
+       let g = generateit();
+       g.next();
+       g.next(2000);
+       g.next(9000);
+       g.next(100);
+   </script> -->
+   <!-- <script>
+       (function(){console.log("Immidiatly evoke of function");})();
+   </script> -->
+   <!-- <script>
+       var arr = [100,200,300,400,500];
+       var newArr = arr.map(function(value){
+           value++;
+           return value;
+       });
+       console.log(arr);
+       console.log(newArr);
+   </script> -->
+   <!-- <script>
+       var obj1 = {1 : "Subhan", 2 : "sajid"};
+       var obj2 = {3 : "Hello", 4 : "My computer"};
+       var obj3 = {5 : "Laptop"};
+       var final_obj = {obj1,...obj2,...obj3};
+       console.log(final_obj);
+   </script> -->
+   <!-- <script>
+       var str =new String ("my new add string");
+       console.log("The total numbr of chracter is not correct str is"+str.length);
+
+   </script> -->
+   <!-- <script>
+       class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+const carrot = new Vegetable("carrot");
+console.log(carrot.name); // => should be 'carrot'
+
+   </script> -->
+      <!-- <script>
+         var x = 20;
+         var y = 30;
+         console.log(`The product of variables ${x} and ${y} is:
+          ${x*y}`);
+      </script> -->
+      <script>
+          function prom(complete){
+              return new Promise(function(resolve, reject){
+                  if (complete){
+                      resolve("I am successfull.");
+                  }else{
+                      reject("I am failed.");
+                  }
+              });
+              
+          }
+          let onfulfilment = (result) => {
+              console.log(result);
+          }
+          let onRejection = (error) => {
+              console.log(error);
+          }
+          prom (true). then(onfulfilment);
+          prom (true). catch(onRejection);
+        //   console.log(prom(true));
+      </script>
+
+</body>
+</html>

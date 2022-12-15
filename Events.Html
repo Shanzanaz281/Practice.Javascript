@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onresize="hello()">
+    
+    <script>
+        function hello(){
+         alert("Hy Everyone");
+        }
+    </script>
+</body>
+    <button onmousemove="hello()">click</button>
+    <p>Click Button</p>
+
+    <!-- <body>
+        <form action="" onsubmit="submitfunction()">
+            <label for="">Name</label><input type="text" id="fname" onblur="blurfunction(this)" oninput="inputfunction(this)" oninvalid="alert('please  fill the First name')"required><br><br>
+            <label for="">Class</label><input type="text" id=""><br><br>
+            <label for="">Country</label>
+            <select id="" onfocus="focusfunction()" onblur="blurfunction(this)" onchange="changefunction(this)">
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Scotland">Scotland</option>
+                <option value="London">London</option>
+                <option value="England">England</option>
+            </select>
+            <input type="submit">
+        </form>
+        <div id="text" style="border:1px solid blue; margin-top: 20px;"></div>
+        <script>
+            function focusfunction(){
+           document.getElementById("fname").style.background = "red";
+       }
+       function blurfunction(){
+           document.getElementById("fname").style.background = "";
+       }
+       function inputfunction(element){
+           let x= element.value;
+           document.getElementById("text").innerHTML = x;
+       }
+       function changefunction(element){
+       let x=element.value;
+       document.getElementById("text").innerHTML = x;
+       }
+       function submitfunction(){
+           alert("My file cannot submit");
+       }
+        </script>
+    </body> -->
+</html>

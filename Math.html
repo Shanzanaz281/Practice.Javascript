@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var base_convert = function(number, initial_base, change_base) {
+   if ((initial_base && change_base) <2 || (initial_base && change_base)>36)
+    return 'Base between 2 and 36';
+   
+    return parseInt(number + '', initial_base)
+    .toString(change_base);
+}
+
+console.log(base_convert('E164',16,8));
+console.log(base_convert(1000,2,8));
+    </script> -->
+    <!-- <script>
+     rand = function(min, max){
+         if(min==null && max==null)
+         return 0;
+         if(max == null){
+             max = min;
+             min = 0;
+         }
+         return min + Math.floor(Math.random() * (max - min +1));
+     };
+     console.log(rand(20,1));
+     console.log(rand(1,10));
+     console.log(rand(6));
+    console.log(rand());
+    </script> -->
+    <!-- <script>
+        function decimals(n, p){
+            if ((typeof n !== 'number') || (typeof p !== 'number'))
+        return false;
+        n = parseFloat(n) || 0;
+        return n.toFixed(p);
+        }
+        console.log(decimals(2.100212, 2));
+        console.log(decimals(2.100212, 3));
+        console.log(decimals(2100, 2));
+    </script> -->
+    <!-- <script>
+        function max(input) {
+            let largest = input[0];
+            for (let i = 0; i < input.length; i++) {
+                if (input[i] > largest) {
+                    largest = input[i]
+                }
+            }
+            return largest;
+            }
+
+console.log(max([12,34,100,1]));
+console.log(max([-12,-34,0,-56,-1]));
+    </script> -->
+  <script>
+      function min(input){
+          let lowest = input[0];
+          for(let i = 0; i<input.length; i++){
+              if (input[i] < lowest){
+                  lowest = input[i]
+              }
+          }
+          return lowest;
+      }
+      console.log(min([12,34,100,1]));
+      console.log(min([-12,-34,0,-56,-1]));
+  </script>
+</body>
+</html>
